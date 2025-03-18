@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
     <header>
         <h1>Manuel Llancaleo - Developer Freelancer</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+
     <div class="presentacion">
         <p>
             Hola! Mi nombre es Manuel Llancaleo y soy un desarrollador web freelancer. 
@@ -24,49 +28,57 @@
             Si necesitas una página web para tu negocio, no dudes en contactarme.
         </p>
     </div>
-   <div class="card">
-    <section>
-        <h2>Diseño y Desarrollo Web Freelancer</h2>
-        <i class="ti ti-map-pin"><p>Santiago, Chile</p></i>
-        <a href="#">Contactar</a>
-    </section>
-   </div>
+
+    <div class="card">
+        <section>
+            <h2>Diseño y Desarrollo Web Freelancer</h2>
+            <i class="ti ti-map-pin"></i><p>Santiago, Chile</p>
+            <a href="#">Contactar</a>
+        </section>
+    </div>
+
     <div class="container">
         <main>
             <h2>Mis Servicios</h2>
-        <section>
-            <h3>Diseño y Desarrollo de Aplicaciones Web</h3>
-            <i class="ti ti-photo-code">
-                <p>Desarrollo de sitios web a medida, con diseño responsivo y optimizado para SEO.</p>
-            </i>
-        </section>
-        <section>
-            <h3>Gestion de E-comerce</h3>
-            <i class="ti ti-shopping-bag">
-                <p>Desarrollo de tiendas online con Woocommerce y Shopify.</p>
-            </i>
-        </section>   
+            <div class="services">
+                <section class="service-card">
+                    <h3>Diseño y Desarrollo de Aplicaciones Web</h3>
+                    <i class="ti ti-photo-code"></i>
+                    <p>Desarrollo de sitios web a medida, con diseño responsivo y optimizado para SEO.</p>
+                </section>
+                <section class="service-card">
+                    <h3>Gestión de E-commerce</h3>
+                    <i class="ti ti-shopping-bag"></i>
+                    <p>Desarrollo de tiendas online con Woocommerce y Shopify.</p>
+                </section>
+            </div>
         </main>
     </div>
+
     <div class="form">
         <section>
-            <h2>Contacto</h>
+            <h2>Contacto</h2>
             <form>
-                <legend>Contactame a traves de este formulario</legend>
+                <legend>Contactame a través de este formulario</legend>
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                <label for="Telefono">Telefono</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Tu telefono">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Tu email">
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <input type="button" value="Enviar">
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <input type="submit" value="Enviar">
             </form>
         </section>
     </div>
+
     <footer class="card-footer">
         <p>Todos los derechos reservados. Manuel Llancaleo, Developer Freelancer</p>
     </footer>
-</body> 
+</body>
 </html>
